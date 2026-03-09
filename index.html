@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elegant Hair Studio</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#fafafa;
+color:#333;
+}
+
+header{
+background:#111;
+color:white;
+padding:20px;
+text-align:center;
+}
+
+nav{
+margin-top:10px;
+}
+
+nav a{
+color:white;
+margin:0 15px;
+text-decoration:none;
+font-size:16px;
+}
+
+.hero{
+background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+url("https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9");
+background-size:cover;
+background-position:center;
+height:400px;
+display:flex;
+align-items:center;
+justify-content:center;
+color:white;
+text-align:center;
+}
+
+.hero h1{
+font-size:48px;
+}
+
+.container{
+padding:50px 10%;
+}
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+}
+
+.service-card{
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+text-align:center;
+}
+
+.service-card h3{
+margin-bottom:10px;
+}
+
+.appointment{
+background:#f0f0f0;
+padding:40px;
+border-radius:10px;
+}
+
+form{
+display:grid;
+gap:15px;
+}
+
+input,select,textarea{
+padding:12px;
+border-radius:6px;
+border:1px solid #ccc;
+}
+
+button{
+background:#111;
+color:white;
+padding:12px;
+border:none;
+border-radius:6px;
+cursor:pointer;
+}
+
+button:hover{
+background:#444;
+}
+
+.dog{
+background:#fff3cd;
+padding:20px;
+margin-top:20px;
+border-radius:8px;
+text-align:center;
+font-size:18px;
+}
+
+footer{
+background:#111;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:32px;
+}
+
+.container{
+padding:40px 5%;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h2>Elegant Hair Studio</h2>
+<nav>
+<a href="#services">Services</a>
+<a href="#appointment">Appointment</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<section class="hero">
+<div>
+<h1>Your Style, Our Passion</h1>
+<p>Professional Hair Styling & Grooming</p>
+</div>
+</section>
+
+<section class="container" id="services">
+
+<h2>Our Services</h2>
+<br>
+
+<div class="services">
+
+<div class="service-card">
+<h3>Hair Cut</h3>
+<p>Professional modern haircut styles.</p>
+</div>
+
+<div class="service-card">
+<h3>Hair Coloring</h3>
+<p>Premium color and highlights.</p>
+</div>
+
+<div class="service-card">
+<h3>Hair Spa</h3>
+<p>Relaxing hair treatment and scalp care.</p>
+</div>
+
+<div class="service-card">
+<h3>Beard Styling</h3>
+<p>Perfect beard trimming and styling.</p>
+</div>
+
+</div>
+
+<div class="dog">
+🐶 Dogs are Welcome!  
+Bring your furry friend while you enjoy your haircut.
+</div>
+
+</section>
+
+<section class="container appointment" id="appointment">
+
+<h2>Book an Appointment</h2>
+<br>
+
+<form>
+
+<input type="text" placeholder="Your Name" required>
+
+<input type="email" placeholder="Email" required>
+
+<input type="tel" placeholder="Phone Number" required>
+
+<select required>
+<option value="">Select Service</option>
+<option>Hair Cut</option>
+<option>Hair Coloring</option>
+<option>Hair Spa</option>
+<option>Beard Styling</option>
+</select>
+
+<input type="date" required>
+
+<textarea placeholder="Special Request"></textarea>
+
+<button type="submit">Book Appointment</button>
+
+</form>
+
+</section>
+
+<section class="container" id="about">
+
+<h2>About Us</h2>
+<br>
+
+<p>
+Elegant Hair Studio is a modern hair salon providing professional styling,
+coloring, and grooming services. Our expert stylists ensure every client
+leaves looking confident and stylish. Our salon is also pet-friendly so
+you can bring your dog along while you relax.
+</p>
+
+</section>
+
+<section class="container" id="contact">
+
+<h2>Contact</h2>
+<br>
+
+<p>📍 Location: Your City</p>
+<p>📞 Phone: +91 98765 43210</p>
+<p>📧 Email: salon@email.com</p>
+
+</section>
+
+<footer>
+
+<p>© 2026 Elegant Hair Studio | All Rights Reserved</p>
+
+</footer>
+
+</body>
+</html>
